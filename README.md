@@ -16,7 +16,7 @@ A modern, mobile-friendly barber service menu designed to clearly showcase servi
 - Personal barber portfolios  
 
 ## Customization
-This menu is designed to be easily customized with your own services, prices, colors, and branding. No unnecessary complexity—just update the content and make it yours.
+This menu is designed to be easily customized with your own services, prices, colors, and branding. No unnecessary complexity - just update the content and make it yours.
 
 ## License
 This project is intended for commercial and personal use. Redistribution or resale as-is is not permitted without modification.
