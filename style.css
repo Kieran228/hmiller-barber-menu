@@ -133,6 +133,58 @@ body {
     line-height: 1.6;
 }
 
+/* Add-ons Section */
 .addons-section {
-    
+    background: rgba(0, 0, 0, 00.3s);
+    padding: 40px 30px;
+    border: 2px solid #d4a574;
+    border-radius: 12px;
+    margin-bottom: 60px;
 }
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.addon-item {
+    padding: 15px;
+    background: rgba(212, 165, 116, 0.05);
+    border-left: 3px solid #d4a574;
+    transition: all 0.3s ease;
+}
+
+.addon-item:hover {
+    background: rgba(212, 165, 116, 0.15);
+    padding-left: 20px;
+}
+
+.hours-grid {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+.hours-row:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: bold;
+    color: #d4a574;
+}
+
+.time {
+    color: #c4c4c4;
+}
+
