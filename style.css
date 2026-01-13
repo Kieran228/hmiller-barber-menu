@@ -32,7 +32,7 @@ body {
     height: auto;
     margin-bottom: 20px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .logo:hover {
@@ -161,6 +161,14 @@ body {
     padding-left: 20px;
 }
 
+.hours-section {
+    text-align: center;
+    background: rgba(212, 165, 116, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
 .hours-grid {
     display: inline-block;
     text-align: left;
@@ -188,3 +196,74 @@ body {
     color: #c4c4c4;
 }
 
+.appt-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #d4a574, #b89);
+    color: #1a0f0a;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3s);
+}
+
+.appt-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(212, 165, 116, 0.5);
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid #d4a574;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #c4c4c4;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c4c4c4;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: #d4a574;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 160px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        width: 180px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
