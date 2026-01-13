@@ -91,3 +91,48 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.service-card:hover::before{
+    left: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 165, 116, 0.3);
+    border-color: #f5d9a8;
+}
+
+.service-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d4a574;
+    margin-bottom: 10px;
+}
+
+.service-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f5d9a8;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 0.95rem;
+    color: #c4c4c4;
+    line-height: 1.6;
+}
+
+.addons-section {
+    
+}
