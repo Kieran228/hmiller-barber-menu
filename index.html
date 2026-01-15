@@ -21,170 +21,211 @@
       <p class="tagline">Classic Cuts, Modern Style</p>
     </div>
 
+    <!-- Home Page Wrapper -->
     <div id="home" class="page active">
 
-    </div>
-
-    <div class="carousel-section">
-      <div class="carousel-container">
-        <div class="carousel-slide-active">
-          <img src="" alt="Cut 1">
-        </div>
-        <div class="carousel-slide">
-          <img src="" alt="Cut 2">
-        </div>
-        <div class="carousel-slide">
-          <img src="" alt="Cut 3">
-        </div>
-        <div class="carousel-slide">
-          <img src="" alt="Cut 4">
-        </div>
-
-        <button class="carousel-arrow prev" onclick=""><</button>
-        <button class="carousel-arrow next" onclick="">></button>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Classic Services Section -->
-      <h2 class="section-header">Classic Services</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-name">Gentleman's Cut</div>
-          <div class="service-price">$35</div>
-          <div class="service-description">
-            Tailored haircut finished with a straight razor neckline and style.
+      <!-- Carousel Section -->
+      <div class="carousel-section">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="./media/IMG_1720.JPG" alt="Cut 1"/>
           </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-name">Buzz Cut</div>
-          <div class="service-price">$25</div>
-          <div class="service-description">
-            Tailored haircut finished with a straight razor neckline and style.
+          <div class="carousel-slide">
+            <img src="" alt="Cut 2"/>
           </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-name">Skin Fade / Taper Fade</div>
-          <div class="service-price">$45</div>
-          <div class="service-description">
-            Custom fade to fit your style. From low to high, polished with razor
-            detailing
+          <div class="carousel-slide">
+            <img src="" alt="Cut 3"/>
           </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-name">Beard Trim & Shape up</div>
-          <div class="service-price">$20</div>
-          <div class="service-description">
-            Mustache or beard trim. Lined to perfection.
+          <div class="carousel-slide">
+            <img src="./media/IMG_1704.JPG" alt="Cut 4"/>
           </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-name">Hot Towel Shave</div>
-          <div class="service-price">$35</div>
-          <div class="service-description">
-            Old-school straight razor shave with hot towel and soothing finish.
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-name">Head Shave</div>
-          <div class="service-price">$35</div>
-          <div class="service-description">
-            Smooth and polished with a hot towel head treatment.
+  
+          <button class="carousel-arrow prev" onclick="changeSlide(-1)"><</button>
+          <button class="carousel-arrow next" onclick="changeSlide(1)">></button>
+  
+          <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
       </div>
-
-      <!-- Modern & Specialty Section -->
-      <h2 class="section-header">Modern & Specialty</h2>
-      <div class="services-grid">
-        <div class="service-card">
+  
+      <div class="container">
+        <!-- Classic Services Section -->
+        <h2 class="section-header">Classic Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-name">Gentleman's Cut</div>
+            <div class="service-price">$35</div>
+            <div class="service-description">
+              Tailored haircut finished with a straight razor neckline and style.
+            </div>
+          </div>
+  
+          <div class="service-card">
+            <div class="service-name">Buzz Cut</div>
+            <div class="service-price">$25</div>
+            <div class="service-description">
+              Tailored haircut finished with a straight razor neckline and style.
+            </div>
+          </div>
+  
+          <div class="service-card">
+            <div class="service-name">Skin Fade / Taper Fade</div>
+            <div class="service-price">$45</div>
+            <div class="service-description">
+              Custom fade to fit your style. From low to high, polished with razor
+              detailing
+            </div>
+          </div>
+  
+          <div class="service-card">
+            <div class="service-name">Beard Trim & Shape up</div>
+            <div class="service-price">$20</div>
+            <div class="service-description">
+              Mustache or beard trim. Lined to perfection.
+            </div>
+          </div>
+  
+          <div class="service-card">
+            <div class="service-name">Hot Towel Shave</div>
+            <div class="service-price">$35</div>
+            <div class="service-description">
+              Old-school straight razor shave with hot towel and soothing finish.
+            </div>
+          </div>
+  
+          <div class="service-card">
+            <div class="service-name">Head Shave</div>
+            <div class="service-price">$35</div>
+            <div class="service-description">
+              Smooth and polished with a hot towel head treatment.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Modern & Specialty Section -->
+        <h2 class="section-header">Modern & Specialty</h2>
+        <div class="services-grid">
+          <div class="service-card">
             <div class="service-name">Scissor Cut / Long Hair Styling</div>
             <div class="service-price">$40</div>
-            <div class="service-description">Perfect for longer styles or layered looks</div>
-        </div>
-
-        <div class="service-card">
+            <div class="service-description">
+              Perfect for longer styles or layered looks
+            </div>
+          </div>
+  
+          <div class="service-card">
             <div class="service-name">Line-Up / Edge-Up</div>
             <div class="service-price">$15</div>
-            <div class="service-description">Clean lines and edges to keep your look sharp between cuts</div>
-        </div>
-
-        <div class="service-card">
+            <div class="service-description">
+              Clean lines and edges to keep your look sharp between cuts
+            </div>
+          </div>
+  
+          <div class="service-card">
             <div class="service-name">Kids' Cut (12 & under)</div>
             <div class="service-price">$30</div>
-            <div class="service-description">Fun, fast, and fresh for the little ones.</div>
+            <div class="service-description">
+              Fun, fast, and fresh for the little ones.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add Ons Section -->
+        <div class="addons-section">
+          <h2 class="section-header">Add-Ons</h2>
+          <div class="addons-grid">
+            <div class="addon-item">
+              <strong>Shampoo & Conditioning</strong> - $10
+            </div>
+            <div class="addon-item"><strong>Designs</strong> - $10</div>
+            <div class="addon-item"><strong>Eyebrows</strong> - $10</div>
+          </div>
+        </div>
+  
+        <!-- Hours Section -->
+        <div class="hours-section">
+          <h2 class="section-header">Hours</h2>
+          <div class="hours-grid">
+            <div class="hours-row">
+              <span class="day">Sunday</span>
+              <span class="time">Closed</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Monday</span>
+              <span class="time">Closed</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Tuesday</span>
+              <span class="time">10 AM - 6 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Wednesday</span>
+              <span class="time">10 AM - 6 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Thursday</span>
+              <span class="time">10 AM - 6 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Friday</span>
+              <span class="time">10 AM - 7 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Saturday</span>
+              <span class="time">9 AM - 4 PM</span>
+            </div>
+          </div>
+          <a class="appt-button" href="#">Book Appointment</a>
         </div>
       </div>
-
-      <!-- Add Ons Section -->
-       <div class="addons-section">
-        <h2 class="section-header">Add-Ons</h2>
-        <div class="addons-grid">
-            <div class="addon-item">
-                <strong>Shampoo & Conditioning</strong> - $10
-            </div>
-            <div class="addon-item">
-                <strong>Designs</strong> - $10
-            </div>
-            <div class="addon-item">
-                <strong>Eyebrows</strong> - $10
-            </div>
+    </div>
+    
+    <!-- Gallery -->
+    <div id="gallery" class="page">
+      <div class="container">
+        <h2 class="section-header"></h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightBox(0)">
+            <img src="" alt="Cut 1">
+          </div>
+          <div class="gallery-item" onclick="openLightBox(1)">
+            <img src="" alt="Cut 2">
+          </div>
+          <div class="gallery-item" onclick="openLightBox(2)">
+            <img src="" alt="Cut 3">
+          </div>
+          <div class="gallery-item" onclick="openLightBox(3)">
+            <img src="" alt="Cut 4">
+          </div>
+          <!-- Add More Gallery Items Here! -->
         </div>
-       </div>
-
-       <!-- Hours Section -->
-        <div class="hours-section">
-            <h2 class="section-header">Hours</h2>
-            <div class="hours-grid">
-                <div class="hours-row">
-                    <span class="day">Sunday</span>
-                    <span class="time">Closed</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Monday</span>
-                    <span class="time">Closed</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Tuesday</span>
-                    <span class="time">10 AM - 6 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Wednesday</span>
-                    <span class="time">10 AM - 6 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Thursday</span>
-                    <span class="time">10 AM - 6 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Friday</span>
-                    <span class="time">10 AM - 7 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Saturday</span>
-                    <span class="time">9 AM - 4 PM</span>
-                </div>
-            </div>
-            <a class="appt-button" href="#">Book Appointment</a>
-        </div>
+      </div>
     </div>
 
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightBox()">
+      <button class="lightbox-close" onclick="closeLightBox()">x</button>
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <img id="lightbox-img" src="" alt="Gallery Image">
+      </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer">
-        <div class="contact-info">
-            <div class="contact-item">
-                <span>📧</span>
-                <span>Haydenmiller1993@yahoo.com</span>
-            </div>
-            <div class="contact-item">
-                <span>📍</span>
-                <span>1206 Government St. Ocean Springs, MS</span>
-            </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>📧</span>
+          <span>Haydenmiller1993@yahoo.com</span>
         </div>
+        <div class="contact-item">
+          <span>📍</span>
+          <span>1206 Government St. Ocean Springs, MS</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
