@@ -318,7 +318,7 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
-.courousel-slide.active {
+.carousel-slide.active {
   opacity: 1;
 }
 
