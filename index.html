@@ -27,9 +27,11 @@
       <!-- Carousel Section -->
       <div class="carousel-section">
         <div class="carousel-container">
+
           <div class="carousel-slide active">
             <img src="./media/IMG_1720.JPG" alt="Cut 1"/>
           </div>
+
           <div class="carousel-slide">
             <img src="./media/IMG_1701.JPG" alt="Cut 2"/>
           </div>
@@ -179,7 +181,10 @@
               <span class="time">9 AM - 4 PM</span>
             </div>
           </div>
-          <a class="appt-button" href="#">Book Appointment</a>
+
+          <div>
+            <a class="appt-button" href="#">Book Appointment</a>
+          </div>
         </div>
       </div>
     </div>
@@ -190,26 +195,30 @@
         <h2 class="section-header">My Work</h2>
 
         <div class="featured-gallery-video">
-          <video controls autoplay loop>
+          <video controls muted autoplay loop>
             <source src="./media/featuredVideo.mp4" type="video/mp4">
             Your browser doesn't support video.
           </video>
         </div>
 
         <div class="gallery-grid">
-          <div class="gallery-item" onclick="openLightBox(0)">
-            <img src="./media/IMG_1691.JPG" alt="Cut 1">
+          <div class="gallery-item video-item" onclick="openLightBox(0)">
+            <video src="./media/cutClip.mp4" muted></video>
           </div>
           <div class="gallery-item" onclick="openLightBox(1)">
-            <img src="" alt="Cut 2">
+            <img src="./media/IMG_1691.JPG" alt="Cut 1">
           </div>
           <div class="gallery-item" onclick="openLightBox(2)">
-            <img src="" alt="Cut 3">
+            <img src="" alt="Cut 2">
           </div>
           <div class="gallery-item" onclick="openLightBox(3)">
+            <img src="" alt="Cut 3">
+          </div>
+          <div class="gallery-item" onclick="openLightBox(4)">
             <img src="" alt="Cut 4">
           </div>
-          <!-- Add More Gallery Items Here! -->
+          <!-- Add More Gallery Items Here!
+            -->
         </div>
       </div>
     </div>
