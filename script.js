@@ -46,6 +46,25 @@ navLinks.forEach((link) => {
 // Lightbox functionality
 const galleryItems = [
   { type: "video", src: "./media/cutClip.mp4" },
+  { type: "video", src: "./media/cutClip2.mp4" },
+  { type: "video", src: "./media/cutClip3.mp4" },
+  { type: "video", src: "./media/cutClip4.mp4" },
+  { type: "video", src: "./media/cutClip5.mp4" },
+  { type: "video", src: "./media/cutClip6.mp4" },
+  { type: "video", src: "./media/cutClip7.mp4" },
+  { type: "video", src: "./media/cutClip8.mp4" },
+  { type: "video", src: "./media/cutClip9.mp4" },
+  { type: "video", src: "./media/cutClip10.mp4" },
+  { type: "video", src: "./media/cutClip11.mp4" },
+  { type: "video", src: "./media/cutClip12.mp4" },
+  { type: "video", src: "./media/cutClip13.mp4" },
+  { type: "video", src: "./media/cutClip14.mp4" },
+  { type: "video", src: "./media/cutClip15.mp4" },
+  { type: "video", src: "./media/cutClip16.mp4" },
+  { type: "video", src: "./media/cutClip17.mp4" },
+  { type: "video", src: "./media/cutClip18.mp4" },
+  { type: "video", src: "./media/cutClip19.mp4" },
+  { type: "video", src: "./media/cutClip20.mp4" },
   { type: "image", src: "./media/IMG_1691.JPG" },
 ];
 
