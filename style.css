@@ -526,3 +526,12 @@ body {
     height: 600px;
   }
 }
+
+.location {
+  text-decoration: none;
+  color: #c4c4c4;
+}
+
+.location:hover {
+  color: #d4a574;
+}
