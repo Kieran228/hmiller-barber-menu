@@ -182,7 +182,7 @@ body {
 
 /* Add-ons Section */
 .addons-section {
-  background: rgba(0, 0, 0, 00.3s);
+  background: rgba(0, 0, 0, 0.3);
   padding: 40px 30px;
   border: 2px solid #d4a574;
   border-radius: 12px;
@@ -254,7 +254,7 @@ body {
   text-decoration: none;
   margin: 30px 0;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3s);
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
 }
 
 .appt-button:hover {
@@ -293,7 +293,7 @@ body {
 .carousel-section {
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 2opx;
+  padding: 0 20px;
 }
 
 .carousel-container {
@@ -371,7 +371,7 @@ body {
 
 .carousel-arrow:hover {
     background: #d4a574;
-    transform: translateY();
+    transform: translateY(-50%);
 }
 
 .carousel-arrow.prev {

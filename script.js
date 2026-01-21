@@ -110,7 +110,7 @@ function closeLightBox() {
 
   const video = lightboxContent.querySelector("video");
   if (video) {
-    video.pause;
+    video.pause();
     video.currentTime = 0;
   }
 
