@@ -65,6 +65,16 @@ const galleryItems = [
   { type: "video", src: "./media/cutClip18.mp4" },
   { type: "video", src: "./media/cutClip19.mp4" },
   { type: "video", src: "./media/cutClip20.mp4" },
+  { type: "video", src: "./media/cutClip21.mp4" },
+  { type: "video", src: "./media/cutClip22.mp4" },
+  { type: "video", src: "./media/cutClip23.mp4" },
+  { type: "video", src: "./media/cutClip24.mp4" },
+  { type: "video", src: "./media/cutClip25.mp4" },
+  { type: "video", src: "./media/cutClip26.mp4" },
+  { type: "video", src: "./media/cutClip27.mp4" },
+  { type: "video", src: "./media/cutClip28.mp4" },
+  { type: "video", src: "./media/cutClip29.mp4" },
+  { type: "video", src: "./media/cutClip30.mp4" },
   { type: "image", src: "./media/IMG_1691.JPG" },
 ];
 
