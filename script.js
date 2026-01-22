@@ -75,6 +75,10 @@ const galleryItems = [
   { type: "video", src: "./media/cutClip28.mp4" },
   { type: "video", src: "./media/cutClip29.mp4" },
   { type: "video", src: "./media/cutClip30.mp4" },
+  { type: "video", src: "./media/cutClip31.mp4" },
+  { type: "video", src: "./media/cutClip32.mp4" },
+  { type: "video", src: "./media/cutClip33.mp4" },
+  { type: "video", src: "./media/cutClip34.mp4" },
   { type: "image", src: "./media/IMG_1691.JPG" },
 ];
 
