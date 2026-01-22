@@ -535,3 +535,85 @@ body {
 .location:hover {
   color: #d4a574;
 }
+
+.most-popular-section {
+  margin: 60px 0;
+  position: relative;
+}
+
+.popular-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5d9a8, #d4a574);
+  color: #1a0f0a;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-left: 10px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.popular-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  perspective: 1000px;
+}
+
+.popular-card {
+  background: rgba(212, 165, 116, 0.1);
+  border: 2px solid #d4a574;
+  border-radius: 16px;
+  padding: 35px;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.popular-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.popular-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/* Animated Gradient Border */
+.popular-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    #d4a574,
+    #f5d9a8,
+    #b8956a,
+    #d4a574
+  );
+
+  border-radius: 16px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background-size: 300% 300%;
+  animation: gradientShift 4s ease infinite;
+}
+
+.popular-card:hover::before {
+  opacity: 1;
+}
+
+.popular-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(212, 165, 116, 0.4),
+              0 0 30px rgba(212, 165, 116, 0.2);
+  border-color: #f5d9a8;
+}
