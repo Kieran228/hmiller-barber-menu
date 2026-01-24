@@ -40,6 +40,8 @@ navLinks.forEach((link) => {
 
     pages.forEach((p) => p.classList.remove("active"));
     document.getElementById(pageName).classList.add("active");
+
+    window.scrollTo(0, 0);
   });
 });
 
