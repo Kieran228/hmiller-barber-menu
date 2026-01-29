@@ -302,13 +302,22 @@ body {
   padding: 20px;
   background: rgba(212, 165, 116, 0.05);
   border-radius: 12px;
+  border: 2px solid transparent;
   text-decoration: none;
   color: #c4c4c4;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-  color: #d4a574;
+  background: rgba(212, 165, 116, 0.15);
+  border-color: #d4a574;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(212, 165, 116, 0.3);
+}
+
+.contact-item:hover .contact-icon {
+  color: #f5d9a8;
+  transform: scale(1.1);
 }
 
 .contact-icon {
@@ -323,6 +332,13 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.contact-text {
+  font-size: 0.95rem;
+  color: #c4c4c4;
+  text-align: center;
+  line-height: 1.4;
 }
 
 /* Carousel */
