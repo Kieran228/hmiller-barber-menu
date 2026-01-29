@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <div class="nav">
       <div class="nav-container">
-        <a href="" class="nav-link active" data-page="home">Home</a>
-        <a href="" class="nav-link" data-page="gallery">Gallery</a>
+        <a href="#" class="nav-link active" data-page="home">Home</a>
+        <a href="#" class="nav-link" data-page="gallery">Gallery</a>
       </div>
     </div>
 
+    <!-- Logo and Hero Section -->
     <div class="hero">
       <img class="logo" src="./media/barberLogo.png" alt="" />
-      <h1>Hayden | The Hudson Salon</h1>
+      <h1>Hayden | <a class="hudson-link" href="https://www.thehudsondowntown.com/" target="_blank">
+        The Hudson Salon
+      </a></h1>
       <p class="tagline">Classic Cuts, Modern Style</p>
     </div>
 
@@ -112,7 +116,7 @@
         <div class="services-grid">
           <div class="service-card">
             <div class="service-name">Gentleman's Cut</div>
-            <div class="service-price">$40</div>
+            <div class="service-price">$35</div>
             <div class="service-description">
               Tailored haircut finished with a straight razor neckline and style.
             </div>
@@ -128,7 +132,7 @@
   
           <div class="service-card">
             <div class="service-name">Skin Fade / Taper Fade</div>
-            <div class="service-price">$45</div>
+            <div class="service-price">$40</div>
             <div class="service-description">
               Custom fade to fit your style. From low to high, polished with razor
               detailing
@@ -137,7 +141,7 @@
   
           <div class="service-card">
             <div class="service-name">Beard Trim & Shape up</div>
-            <div class="service-price">$20</div>
+            <div class="service-price">$25</div>
             <div class="service-description">
               Mustache or beard trim. Lined to perfection.
             </div>
@@ -180,7 +184,7 @@
           </div>
   
           <div class="service-card">
-            <div class="service-name">Kids' Cut (12 & under)</div>
+            <div class="service-name">Kids' Cut (10 & under)</div>
             <div class="service-price">$30</div>
             <div class="service-description">
               Fun, fast, and fresh for the little ones.
@@ -188,7 +192,7 @@
           </div>
         </div>
 
-        <!-- Combo Deals -->
+        <!-- Combo Deals Section -->
         <h2 class="section-header">Combo Deals</h2>
         <div class="services-grid">
           <div class="service-card">
@@ -205,7 +209,7 @@
 
           <div class="service-card">
             <div class="service-name">Cut & Hot Towel Shave</div>
-            <div class="service-price">$65</div>
+            <div class="service-price">$50</div>
             <div class="service-description">A refined gentleman’s service featuring a tailored haircut followed by a traditional hot towel shave. Warm towels and a straight-razor finish provide a clean, smooth result with attention to detail throughout.</div>
           </div>
 
@@ -216,10 +220,11 @@
         <div class="addons-section">
           <h2 class="section-header">Add-Ons</h2>
           <div class="addons-grid">
+            <div class="addon-item"><strong>Designs</strong> - $15</div>
             <div class="addon-item">
-              <strong>Shampoo & Conditioning</strong> - $10
+              <strong>Shampoo & Conditioning</strong>
+               - $10
             </div>
-            <div class="addon-item"><strong>Designs</strong> - $10</div>
             <div class="addon-item"><strong>Eyebrows</strong> - $10</div>
           </div>
         </div>
@@ -266,7 +271,9 @@
       </div>
     </div>
     
-    <!-- Gallery -->
+    <!-- Gallery Page -->
+
+    <!-- Gallery Page Wrapper -->
     <div id="gallery" class="page">
       <div class="container">
         <h2 class="section-header">My Work</h2>
@@ -278,6 +285,7 @@
           </video>
         </div>
 
+        <!-- Galery Videos -->
         <div class="gallery-grid">
           <div class="gallery-item video-item" onclick="openLightBox(0)">
             <video src="./media/cutClip.mp4" muted></video>
@@ -383,6 +391,7 @@
           </div>
           <!-- Add More Gallery Videos Here! -->
 
+          <!-- Gallery Images -->
           <div class="gallery-item" onclick="openLightBox(34)">
             <img src="./media/IMG_1691.JPG" alt="Cut 1" loading="lazy">
           </div>
@@ -401,17 +410,23 @@
 
     <!-- Footer -->
     <div class="footer">
-      <div class="contact-info">
-        <div class="contact-item">
-          <span>📧</span>
-          <span>Haydenmiller1993@yahoo.com</span>
-        </div>
-        <div class="contact-item">
-          <a class="location" target="_blank" href=https://www.google.com/maps/place/1206+Government+St,+Ocean+Springs,+MS+39564/@30.4132681,-88.8252025,17z/data=!3m1!4b1!4m6!3m5!1s0x889c099de03b26f7:0xbb55c1aaa622c754!8m2!3d30.4132681!4d-88.8252025!16s%2Fg%2F11q2vsp509?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D">
-            <span>📍</span>
-            <span>1206 Government St. Ocean Springs, MS</span>
-          </a>
-        </div>
+      <h3 class="footer-title">Get In Touch</h3>
+
+      <div class="contact-grid">
+        <a class="contact-item" href="(228) 215-1628">
+          <i class="fas fa-phone contact-icon"></i>
+          <span class="contact-label">Call Us</span>
+          <span class="contact-text"></span>
+        </a>
+        <a class="contact-item" href="mailto:Haydenmiller1993@yahoo.com">
+
+        </a>
+        <a class="contact-item" href="">
+
+        </a>
+        <div class="map-container"></div>
+        <div class="footer-bottom"></div>
+        <div class="social-links"></div>
       </div>
     </div>
     <script src="./script.js"></script>
