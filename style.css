@@ -558,6 +558,45 @@ body {
   color: #c4c4c4;
 }
 
+.special-hours-clause {
+  background: rgba(212, 165, 116, 0.15);
+  border-left: 4px solid #d4a574;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.special-hours-clause i {
+  color: #d4a574;
+  font-size: 1.5rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.special-hours-clause p {
+  margin: 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.special-hours-clause strong {
+  color: #f5d9a8;
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.clause-details {
+  color: #c4c4c4;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .appt-button {
   display: inline-block;
   background: linear-gradient(135deg, #d4a574, #b89);
@@ -947,5 +986,15 @@ body {
 
   .social-links {
     justify-content: center;
+  }
+
+  .special-hours-clause {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .special-hours-clause p {
+    text-align: center;
   }
 }
