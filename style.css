@@ -566,9 +566,9 @@ body {
   max-width: 600px;
   border-radius: 8px;
   display: flex;
+  justify-content: center;
   gap: 15px;
   align-items: flex-start;
-  max-width: 600px;
 }
 
 .special-hours-clause i {

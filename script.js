@@ -1,4 +1,5 @@
 let currentSlideIndex = 0;
+let autoAdvanceInterval;
 
 const slides = document.querySelectorAll(".carousel-slide");
 const dots = document.querySelectorAll(".dot");
@@ -15,16 +16,27 @@ function showSlide(n) {
 
 function changeSlide(direction) {
   showSlide(currentSlideIndex + direction);
+  resetAutoAdvance();
 }
 
 function currentSlide(n) {
   showSlide(n);
+  resetAutoAdvance();
 }
 
 // Auto-advance carousel every 5 seconds
-setInterval(() => {
-  changeSlide(1);
-}, 5000);
+function startAutoAdvance() {
+  autoAdvanceInterval = setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+}
+
+function resetAutoAdvance() {
+  clearInterval(autoAdvanceInterval);
+  startAutoAdvance();
+}
+
+startAutoAdvance();
 
 // Navigation
 const navLinks = document.querySelectorAll(".nav-link");
