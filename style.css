@@ -235,6 +235,7 @@ body {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: fadeInUp 0.8s ease-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .popular-card:nth-child(1) {
@@ -269,15 +270,21 @@ body {
   animation: gradientShift 4s ease infinite;
 }
 
-.popular-card:hover::before {
+.popular-card:hover::before,
+.popular-card:active::before {
   opacity: 1;
 }
 
-.popular-card:hover {
+.popular-card:hover,
+.popular-card:active {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(212, 165, 116, 0.4),
               0 0 30px rgba(212, 165, 116, 0.2);
   border-color: #f5d9a8;
+}
+
+.popular-card:active {
+  transform: translateY(-8px) scale(1.01);
 }
 
 .popular-card::after {
@@ -464,14 +471,20 @@ body {
   transition: left 0.5s ease;
 }
 
-.service-card:hover::before {
+.service-card:hover::before,
+.service-card:active::before {
   left: 100%;
 }
 
-.service-card:hover {
+.service-card:hover,
+.service-card:active {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(212, 165, 116, 0.3);
   border-color: #f5d9a8;
+}
+
+.service-card:active {
+  transform: translateY(-3px);
 }
 
 .service-name {
@@ -516,6 +529,8 @@ body {
   background: rgba(212, 165, 116, 0.05);
   border-left: 3px solid #d4a574;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .addon-item:hover {
