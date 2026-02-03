@@ -57,6 +57,11 @@ navLinks.forEach((link) => {
   });
 });
 
+// Scroll to top of page after refresh
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+
 // Lightbox functionality
 const galleryItems = [
   { type: "video", src: "./media/cutClip.mp4" },
