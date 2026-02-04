@@ -118,9 +118,16 @@ const galleryItems = [
 ];
 
 function openLightBox(index) {
-  const Lightbox = document.getElementById("lightbox");
-  const lightboxContent = document.querySelector(".lightbox-content");
+  currentLightboxIndex = index;
+  showLightBoxItem(index);
 
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.add('active');
+  document.body.style.overflow = "hidden";
+}
+
+function showLightBoxItem(index) {
+  const lightboxContent = document.querySelector(".lightbox-content");
   lightboxContent.innerHTML = "";
 
   const item = galleryItems[index];
@@ -135,12 +142,22 @@ function openLightBox(index) {
     video.src = item.src;
     video.controls = true;
     video.autoplay = false;
-    video.muted = false;
+    video.muted = true;
     lightboxContent.appendChild(video);
   }
+}
 
-  Lightbox.classList.add("active");
-  document.body.style.overflow = "hidden";
+function navigateLightBox(direction) {
+  // Calculate new index with wraparound (like in carousel)
+  currentLightboxIndex = (currentLightboxIndex + direction + galleryItems.length) % galleryItems.length;
+
+  // Pause any playing video before switching
+  const currentVideo = document.querySelector(".lightbox-content video");
+  if (currentVideo) {
+    currentVideo.pause();
+  }
+
+  showLightBoxItem(currentLightboxIndex);
 }
 
 function closeLightBox() {
@@ -161,5 +178,15 @@ function closeLightBox() {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeLightBox();
+  }
+
+  // Arrow Navigation in lightbox
+  const lightbox = document.getElementById('lightbox');
+  if (lightbox && lightbox.classList.contains("active")) {
+    if (e.key === "ArrowLeft") {
+      navigateLightBox(-1);
+    } else if (e.key === "ArrowRight") {
+      navigateLightBox(1);
+    }
   }
 });

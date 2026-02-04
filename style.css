@@ -46,8 +46,8 @@ body {
 }
 
 .spinner .loading-dot {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #d4a574;
   animation: bounce 1.4s ease-in-out infinite;
@@ -61,7 +61,7 @@ body {
   animation-delay: 0.2s;
 }
 
-.spinner .loading-dot:nth-child(1) {
+.spinner .loading-dot:nth-child(3) {
   animation-delay: 0.4s;
 }
 
@@ -465,7 +465,7 @@ body {
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 15px;
-  animation: fadeInDown 0.8s ease-out;
+  /* animation: fadeInDown 0.8s ease-out; */
 }
 
 .section-header::after {
@@ -926,6 +926,38 @@ body {
 
 .lightbox-close:hover {
     transform: scale(1.1) rotate(90deg);
+}
+
+.lightbox-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  background: rgba(212, 165, 116, 0.8);
+  color: #1a0f0a;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.lightbox-arrow:hover {
+  background: #d4a574;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
 }
 
 /* Keyframe Animations */
