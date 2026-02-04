@@ -85,18 +85,34 @@ body {
 }
 
 .nav-link {
+  position: relative;
   font-size: 1.6rem;
   color: #d4a574;
   text-decoration: none;
   padding: 5px 10px;
-  border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #d4a574;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: #f5d9a8;
-  border-bottom: #d4a574;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
 }
 
 /* Hero Section */
