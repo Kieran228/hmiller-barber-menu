@@ -1,8 +1,29 @@
 let currentSlideIndex = 0;
+let currentLightboxIndex = 0;
 let autoAdvanceInterval;
 
 const slides = document.querySelectorAll(".carousel-slide");
 const dots = document.querySelectorAll(".dot");
+
+// Loading Spinner
+window.addEventListener('load', () => {
+  const spinner = document.getElementById('loading-spinner');
+  if (spinner) {
+    setTimeout(() => {
+      spinner.classList.add('hidden');
+    }, 700);
+  }
+});
+
+// Scroll to top of page after refresh
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
 
 function showSlide(n) {
   slides.forEach((slide) => slide.classList.remove("active"));
@@ -55,11 +76,6 @@ navLinks.forEach((link) => {
 
     window.scrollTo(0, 0);
   });
-});
-
-// Scroll to top of page after refresh
-window.addEventListener('beforeunload', () => {
-  window.scrollTo(0, 0);
 });
 
 // Lightbox functionality
