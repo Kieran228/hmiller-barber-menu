@@ -190,3 +190,28 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
+// Scroll Animations
+const observerOptions = {
+  threshold: 0.15, // Trigger when 15% of the element of visible
+  rootMargin: '0px 0px -50px 0px' // Start slighty before element enters viewport
+};
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+}, observerOptions);
+
+// Wait for DOM to load
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all elements that should animate on scroll
+  const elementsToAnimate = document.querySelectorAll('.scroll-fade, .scroll-fade-header');
+
+  // Observe each element
+  elementsToAnimate.forEach(element => {
+    scrollObserver.observe(element);
+  });
+});

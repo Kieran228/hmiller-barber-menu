@@ -481,7 +481,6 @@ body {
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 15px;
-  /* animation: fadeInDown 0.8s ease-out; */
 }
 
 .section-header::after {
@@ -976,6 +975,52 @@ body {
   right: 20px;
 }
 
+/* Scroll Animations */
+/* Scroll Fade */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-fade.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Fade for Header */
+.scroll-fade-header {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
+}
+
+.scroll-fade-header.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Popular Card Smoothe Animation */
+.popular-card .scroll-fade:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.popular-card .scroll-fade:nth-child(2) {
+  transition-delay: 0s;
+}
+
+.contact-item.scroll-fade:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.contact-item.scroll-fade:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.contact-item.scroll-fade:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
 /* Keyframe Animations */
 @keyframes gradientShift {
   0%, 100% {
@@ -1010,28 +1055,6 @@ body {
   }
   50% {
     transform: scale(1.05);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
